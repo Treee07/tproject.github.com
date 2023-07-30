@@ -1,0 +1,97 @@
+body { 
+    font-family: 'Homemade Apple', cursive;
+    font-weight: 500;
+    color: white;
+    margin-top: 8px;
+    overflow: hidden;
+}
+
+.container .logo { 
+    color: white;
+    text-decoration: none;
+}
+
+.container h1 {
+    font-size: 2.3em;
+}
+
+
+.bg-img {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1504699439244-a7e34870c35d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bg-img::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust the darkness here */
+  }
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+}
+
+.box-blog {
+    width: 400px;
+    border: 1px solid white;
+    margin: 1rem;
+    background-color: #c36f09;
+}
+
+.blog-img {
+    margin: auto;
+    width: 100%;
+    height: 250px;
+
+}
+
+.blog-img img{
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-text { 
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+span { 
+    text-decoration: underline;
+}
+
+.readmore a { 
+    color: white
+}
+
+.readmore a:hover { 
+    color: gray;
+}
+
+.jumbotron{
+    margin: 2em;
+}
+
+.container .blog-content { 
+    width: 80%;
+    height: 100vh;
+}
+
+footer { 
+    padding-top: 1rem;
+}
